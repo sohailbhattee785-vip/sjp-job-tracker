@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2563eb">
+<link rel="manifest" href="manifest.webmanifest">
+<title>SJP Job Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="bar">
+      <div class="logo">SJP Job Tracker</div>
+      <button id="bell" class="iconBtn">🔔 <span id="bellN"></span></button>
+      <button id="theme" class="iconBtn">🌙</button>
+    </div>
+    <div class="sub">Sindh Job Portal application dashboard</div>
+    <div class="actions">
+      <button id="openSjp" class="primary">Open SJP</button>
+      <button id="refresh" class="secondary">↻ Refresh</button>
+    </div>
+    <input id="search" class="search" placeholder="Search job, department or application ID...">
+  </header>
+
+  <section class="title">📊 APPLICATION STATUS</section>
+  <section id="stats" class="stats"></section>
+  <nav id="filters" class="filters"></nav>
+  <section id="noticeBox"></section>
+  <main id="content"><div class="empty">Tap Refresh to load your applications.</div></main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
